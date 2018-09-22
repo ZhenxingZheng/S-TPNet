@@ -5,11 +5,11 @@ We propose a new spatial pyramid module to take full use of inherent multi-scale
 
 # Dependencies
 
-ubuntu 16.04
+Ubuntu 16.04
 
-Python3.6
+Python 3.6
 
-pytorch 0.3.1
+PyTorch 0.3.1
 
 NumPy
 
@@ -18,6 +18,16 @@ Pandas
 PIL
 
 tqdm
+
+# Preparation
+
+UCF-101
+
+Download videos and convert from avi to jpg files using Datasets/ucf_video_to_images.py
+
+HMDB-51
+Download videos and convert from avi to jpg files using Datasets/hmdb_video_to_images.py
+
 
 
 # Coming Soon
