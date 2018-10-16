@@ -44,12 +44,3 @@ class Net(nn.Module):
         frame_feature = cnn_output.view(-1, self.num_segments * self.num_frames, self.img_feature_dim)
         output = self.reason(frame_feature)
         return output
-
-
-
-
-if __name__ == '__main__':
-    fake_data = Variable(torch.randn(24, 3, 224, 224)).cuda()
-    net = Net(basemodel='resnet34', num_segments=3, num_frames=4, dataset='hmdb', start=2).cuda()
-    print(net)
-    #print (net(fake_data).size())
