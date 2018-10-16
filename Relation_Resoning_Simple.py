@@ -96,9 +96,3 @@ class Feature_Pyramid_low(nn.Module):
         return output
 
 
-if __name__ == '__main__':
-
-    fake_data = Variable(torch.randn(2, 12, 512))
-    net = Resoning()
-    print (net(fake_data).size())
-
